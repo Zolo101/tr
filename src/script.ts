@@ -4,13 +4,11 @@ export var trsize = new Decimal(1);
 export var rand0 = new Decimal(1);
 export var mult0 = new Decimal(1);
 
-for (let i = 0; i < 1; i++) {
-	let rand = Math.random()
-	if (rand >= 0.5) {
-		mult0 = Decimal.multiply(mult0,1+rand);
-	} else {
-		mult0 = Decimal.multiply(mult0,1-rand);
-	}
+let rand = Math.random()
+if (rand >= 0.5) {
+	mult0 = Decimal.multiply(mult0,1+rand);
+} else {
+	mult0 = Decimal.multiply(mult0,1-rand);
 }
 
 for (let i = 0; i < 5; i++) {
@@ -34,7 +32,10 @@ for (let i = 0; i < rand0.toNumber(); i++) {
 console.log(rand0.toString());
 console.log(trsize.toString());
 
-let size = trsize.toStringWithDecimalPlaces(2);
+if (trsize.lte(1)) {
+	var size = trsize.toStringWithDecimalPlaces(4);
+} else {var size = trsize.toStringWithDecimalPlaces(2)};
+
 console.log(size);
 document.getElementById("trsize").innerHTML = "Your tr_ is " + size + " meters tall!";
-document.getElementById("tr").style.height = trsize.times(100)  + "px";
+document.getElementById("tr").style.height = trsize.times(400)  + "px";
