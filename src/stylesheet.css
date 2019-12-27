@@ -1,0 +1,25 @@
+#trsize {
+	text-align: center;
+	width: 100%;
+}
+
+* {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+#tr {
+	background-image: url(../lib/trbook1.png);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: 100% 100%;
+}
+
+#changelog {
+	bottom: 0;
+	left: 0;
+}

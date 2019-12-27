@@ -1,0 +1,67 @@
+<html><head><title>Zelocoin Changelog</title>
+<script>
+    var show = true; // change this
+    const beta = document.getElementsByClassName("beta");
+    function ShowBeta() {
+        if (show) {
+            show = false;
+            for (const element of beta) {
+                element.style.display = "none"
+            }
+        } else {
+            show = true;
+            for (const element of beta) {
+                element.style.display = "block"
+            }
+        };
+    }
+</script>
+<style>
+    p,h1,h2,h3,input,label {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1 {
+        display:inline;
+        background: #ADa;
+        padding: 4px;
+    }
+
+    h2 {display: inline;background: #ACa;padding: 4px;}
+
+    #upcoming {
+        display: table;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: rgb(216, 191, 191);
+        padding: 2px;
+        max-width: 400px;
+    }
+
+    .beta {background-color: azure;}
+    .beta h2 {display: inline;background: #e7775b;padding: 4px;}
+
+    .info {color: slategrey;}
+    .addition {color: rgb(124, 194, 20);}
+    .removal {color: rgb(226, 70, 70);}
+</style>
+</head><body>
+<a href="index.html">back back back back back back back back back back back back</a>
+<br><br>
+<p class="info">* Info</p>
+<p class="addition">+ Addition</p>
+<p class="removal">- Removal</p>
+
+<button onclick="ShowBeta()">Show beta changelogs?</button><br><br>
+
+<div id="upcoming">
+<h3>Upcoming</h3>
+<p>• See what things would be near the height of your tr_. I think i'll import most of the images from Scale of the Universe 2. (1.1)</p>
+</div><br>
+
+<div><h1>1.0 (27/12/2019)</h1>
+    <p class="addition">+ tr_</p>
+    <p class="info">* this might freeze if your really really lucky with your luck.</p>
+</div>
+
+</body></html>
