@@ -1,25 +1,107 @@
-#trsize {
+h1,h2,p,a,button {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button {
+	background: #55a86a;
+	border-radius: 4px;
+	border: 1px #47fefe solid;
+	margin: 2px;
+	height: 40px;
+}
+
+body {
+	background: url(../lib/evil_forest.png);
+	background-size: cover;
+}
+
+#version {
+	position: fixed;
+	bottom: 0; 
+	left: 15px;
+	margin-bottom: 12px;
+	z-index: 3;
+	font-weight: bold;
+}
+
+#trsize, #zoomed {
 	text-align: center;
 	width: 100%;
 }
 
-* {
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+#trsize {
+	margin-bottom: 5px;
 }
 
-html, body {
-    margin: 0;
-    height: 100%;
+#zoomed {
+	margin-top: 5px;
 }
 
 #tr {
-	background-image: url(../lib/trbook1.png);
+	background-image: url(../lib/trbook.png);
 	background-repeat: no-repeat;
 	background-position: bottom center;
 	background-size: 100% 100%;
+	/* width: 20%;
+	max-width: 28%; */
+	margin: auto;
+} 
+
+#goldtrspace {
+	position: absolute;
+	z-index: 3;
 }
 
-#changelog {
+.goldtr {
+	background-image: url(../lib/trbooklq.png);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: 100% 100%;
+	position: fixed;
+}
+
+#categories {
+	position: fixed;
+	width: 100%;
+	height: 40%;
 	bottom: 0;
 	left: 0;
+	z-index: 1;
+	background-color: lightgray;
+}
+
+#catlist {width: 10%} #catelements {width: 90%}
+.cat { 
+	border-radius: none;
+	border: none;
+	max-width: 100%;
+	max-height: 10%;
+}
+
+#ahrefs {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+	background-color: lightsteelblue;
+	width: 100%;
+	height: 40px;
+	text-align: center;
+}
+
+#back {
+	position: fixed;
+	top: 0;
+	left: 0;
+	font-size: larger;
+}
+
+#savebutton, #loadbutton {
+	background-color: #3dad32;
+}
+
+#change, #classic {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-large;
+	background-color: peachpuff;
 }

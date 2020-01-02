@@ -1,8 +1,8 @@
-# tr
+# tr_
 
-tr.
+## 2.0
+
+i got bored so
 
 This uses:
-[AD-Notations](https://github.com/antimatter-dimensions/notations),
-[Anime](https://github.com/juliangarnier/anime/),
-[Break_Eternity](https://github.com/Patashu/break_eternity.js)
+[Break_Infinity](https://github.com/Patashu/break_infinity.js)
